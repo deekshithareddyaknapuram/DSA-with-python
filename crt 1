@@ -1,0 +1,9 @@
+class demo:
+  @staticmethod
+  def sum(x,y):
+   print(x+y)
+  @staticmethod
+  def multiply(x,y):
+   print(x*y)
+demo.sum(2,3)
+demo.multiply(3,4) 

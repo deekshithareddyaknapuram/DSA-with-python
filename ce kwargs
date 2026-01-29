@@ -1,0 +1,9 @@
+import math
+def paint_req(height,width,cover):
+  area=math.ceil(height*width)
+  no_of_cans=area/cover
+  print(no_of_cans)
+h=int(input())
+w=int(input())
+coverage=7
+paint_req(height=h,width=w,cover=coverage)

@@ -1,0 +1,9 @@
+set1={1,2,3,4}
+set2={1,'deeksh'}
+print(set1)
+set1.remove(4)
+set2.add(True)
+print(set1)
+print(set2)
+set1.pop()
+print(set1)

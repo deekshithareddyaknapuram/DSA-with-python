@@ -1,0 +1,5 @@
+student_info={
+    deekshitha:{'roll_no':401,'age':19,'course':'python'}
+    sathwik:{'rollno':018,'age':18,'course':'basic'}
+}
+print(student_info)

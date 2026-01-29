@@ -1,0 +1,24 @@
+alphabets=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+#import string
+#a=string.ascii_uppercase
+def encrpyt(txt,shift):
+    ciper=""
+    for char in txt:
+        position=alphabets.index(char)
+        new_position=(position+shift)%26
+        ciper+=alphabets[new_position]
+    print(ciper)
+def decrpyt(ciper,shift):
+    txt=""
+    for char in txt:
+        position=alphabets.index(char)
+        new_position=(position-shift)%26
+        txt+=alphabets[new_position]
+    print(txt)
+
+
+do=input('encrpyt or decrpyt')
+txt=input('enter txt')
+shift=int(input('keys'))
+encrpyt(txt,shift)
+#encrpyt=(a+do)%26

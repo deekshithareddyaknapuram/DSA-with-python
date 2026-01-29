@@ -1,0 +1,16 @@
+class Father:
+    fathername=''
+    def father(self):
+        print(self.fathername)
+class Mother:
+    mothername=''
+    def mother(self):
+        print(self.mothername)
+class son(Mother,Father):
+    def parent(self):
+        print('Father:',self.fathername)
+        print('Mother:',self.mothername)
+s1=son()
+s1.fathername='xyz'
+s1.mothername='abc'
+s1.parent()

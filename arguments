@@ -1,0 +1,15 @@
+#tion,keyword,de
+def func(*n):
+    c=0
+    for i in n:
+      c=c+i
+    print(c)
+func(2,9,7)
+def func(*n):
+    c=0
+    for i in n:
+      c=c+i
+    print(c)
+func(2,9,7)
+
+

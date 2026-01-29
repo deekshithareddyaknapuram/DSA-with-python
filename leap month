@@ -1,0 +1,24 @@
+from calendar import month
+
+
+def leap_year(year):
+ if year%4==0:
+  if year%100==0:
+   if year%400==0:
+    return True
+   else:
+    return False
+  return True 
+def leap_month(year,month):
+   days_list=[31,28,31,30,31,30,31,31,30,31,30,31] # type: ignore
+   if leap_year(year) and month==2: # type: ignore
+    return 29
+   else:
+    return leap_month(month-1)
+year=int(input('enter year:'))
+month=int(input('enter month:'))
+  
+
+days=leap_month(year,month)
+
+print(days)

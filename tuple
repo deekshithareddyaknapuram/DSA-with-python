@@ -1,0 +1,14 @@
+tuple1=(1,3,7,'deek',True,0.25)
+#print(tuple1[-2])
+#print(len(tuple1))
+#print(tuple1[0:4])
+tuple2=(32,90,89)
+#tuple3=(tuple1+tuple2)
+#(tuple3[2])
+print(len(tuple1))
+print(min(tuple2))
+print(max(tuple2))
+list=[1,2,3,4,9]
+print(tuple(list))
+tuple3=(2,)**9
+print(tuple3)

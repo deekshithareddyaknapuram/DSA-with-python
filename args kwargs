@@ -1,0 +1,13 @@
+#def add(*num):#
+  #  c=0
+#for i in num:
+       # c=c+i
+       # print(c)
+#add(2,3,8)
+def info(*num,**person):
+    for i,j in person.items():
+      print(num)
+    print(i,j)
+
+info(2,3,name='deek',dept='ece')
+info(name='sath',age='12',dept='no')        

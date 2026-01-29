@@ -1,0 +1,32 @@
+student_marks={'deeksh':99, 
+               'sath':89,
+               'harry':61,
+               'dimpshi':28,
+               'peter':58,
+}
+student_grades={}
+for student in student_marks:
+    marks=student_marks[student]
+    if marks>=90:
+        student_grades[student]='A'
+    elif marks>=80:
+        student_grades[student]='B'
+    elif marks>=70:
+        student_grades[student]='C'
+    elif marks>=60:
+        student_grades[student]='D'
+    elif marks>=50:
+        student_grades[student]='E'
+    else:
+        student_grades[student]='fail'
+print(student_grades.items())
+
+
+
+
+    
+
+
+ 
+
+  

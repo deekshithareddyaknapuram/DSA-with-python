@@ -1,0 +1,15 @@
+phone_no={'deeksh':401,
+         'saat':3099,
+         'raaa':1111
+}
+def new_phone_no(deeksh,saath,raaa):
+    new_phone_no={}
+    new_phone_no['deeksh']=deeksh
+    new_phone_no['saath']=saath
+    new_phone_no['raaa']=raaa
+    phone_no.append(new_phone_no)
+
+
+
+new_phone_no(790,97783,48937)
+print(phone_no)

@@ -1,0 +1,14 @@
+import statistics
+def mean_median_mode(list):
+    return statistics.mean(list),statistics.median(list),statistics.mode(list)
+
+(mean_median_mode([1,0,3,4,5,3,62,99,37]))
+def add(a,b):
+    if a==0 and b==0:
+        return
+    else:
+        return a+b
+var1=int(input('enter 1st variable'))
+var2=int(input('enter 2nd variable'))
+print(add(var1,var2))
+          

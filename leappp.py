@@ -1,0 +1,5 @@
+H = set("Hacker")
+R = set("Rank")
+H.intersection_update(R)
+print( H)
+set(['a', 'k'])

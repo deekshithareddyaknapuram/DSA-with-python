@@ -1,0 +1,13 @@
+class Parent:
+    def func1(self):
+        print('this is func1')
+class child(Parent):
+    def func2(self):
+        print('this is func2')
+class child2(child):
+    def func3(self):
+        print('this is func3')
+ob=child2()
+ob.func1()
+ob.func2()
+ob.func3()
