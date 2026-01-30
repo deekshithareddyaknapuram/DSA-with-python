@@ -1,0 +1,24 @@
+'''def NumberToBinary(n):
+    if n == 0:
+        return "0"
+
+    res = ""
+    while n > 0:
+        res = str(n % 2) + res
+        n =n//2
+    return res
+
+n = int(input())
+print(NumberToBinary(n))'''
+def BinaryToNumber(num):
+    n=len(num)
+    decimal=0
+    power=0
+    # c=1
+    for i in range(n-1,-1,-1):
+        decimal+=int(num[i])*(2**power)
+        power+=1
+    return decimal
+num = input()
+print(BinaryToNumber(num))
+
