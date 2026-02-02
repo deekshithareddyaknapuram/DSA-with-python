@@ -51,3 +51,41 @@ if ((num>>ith)&1)==1:
     print('set')
 else:
     print('unset')
+
+#powerset print all the subsets n number have 2**n subsets
+def PowerSet(arr):
+    size=len(arr)
+    subset= 1<<size
+    ans=[]
+    for num in range(subset):
+        curr=[]
+        for i in range(size):
+            if num & (1<<i):
+                curr.append(arr[i])
+        ans.append(curr)
+    return ans
+arr=list(map(int,input().split()))
+print(PowerSet(arr))
+#simple number print the number which appeared once
+def SimpleNum(num):
+    n=len(num)
+    xor=0
+    for i in range(0,n):
+        xor=xor^num[i]
+    return xor
+num=list(map(int,input().split()))
+print(SimpleNum(num))
+# other approch for it
+def simple(nums):
+    # n=len(nums)
+    hash={}
+    for num in nums:
+        hash[num]=hash.get(num,0)+1
+    for k,v in hash.items():
+        if v==1:
+            return k
+    return -1
+nums=list(map(int,input().split()))
+print(simple(nums))
+
+
