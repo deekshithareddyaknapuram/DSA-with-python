@@ -1,4 +1,4 @@
-#MinBitflip to covert a number
+'''#MinBitflip to covert a number
 def MinBitFlip(start,target):
     ans=start^target
     c=0
@@ -88,4 +88,27 @@ def simple(nums):
 nums=list(map(int,input().split()))
 print(simple(nums))
 
+
+'''
+# # find the xor of all given numbers from 1 to n
+def xorr(n):
+    if n%4==1:
+        return 1
+    elif n%4==2:
+        return n+1
+    elif n%4==3:
+        return 0
+    else:
+        return n
+# n=int(input())
+# print(xor(n))
+# find xor from l to n
+def xor(l,r):
+    # xor1=0
+    # xor2=0
+    return xorr(l-1)^xorr(r)
+    # return ans
+l=int(input())
+r=int(input())
+print(xor(l,r))
 
