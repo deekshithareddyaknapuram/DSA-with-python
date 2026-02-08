@@ -1,0 +1,14 @@
+def Onesub(i,arr,temp,curr_sum,k):
+    if i==len(arr):
+        if curr_sum==k:
+            print(temp)
+            return True
+        return False
+    if Onesub(i+1,arr,temp+[arr[i]],curr_sum+arr[i],k):
+        return True
+    if Onesub(i+1,arr,temp,curr_sum,k):
+        return True
+    return False
+arr=list(map(int,input().split()))
+k=int(input())
+Onesub(0,arr,[],0,k)
